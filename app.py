@@ -26,7 +26,6 @@ st.write("\n")
 
 search_words = st.text_input("検索 (Поиск слов)", "検索したい単語を入れてください Напишите слова")
 
-#API_KEY = "3237dd9b-f637-dabd-af60-64ad5eae28da:fx"
 
 with open("auth.json") as json_open:
     json_load = json.load(json_open)
