@@ -101,7 +101,7 @@ def lemmatize(words):
     return words, lemma_words, word_types#, trans_words
 
 
-lemma_df = pd.DataFrame(lemmatize(search_words), index=["元の単語 (Предыдущее слово)", "原型 (Инфинитив)", "タイプ (Часть речи)"]).T
+lemma_df = pd.DataFrame(lemmatize(search_words), index=["元の単語 (Предыдущее слово)", "原形 (Инфинитив)", "タイプ (Часть речи)"]).T
 
 try:
     translation_all = translation(search_words)
