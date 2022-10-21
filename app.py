@@ -32,8 +32,7 @@ with open("auth.json") as json_open:
     json_load = json.load(json_open)
 
 
-API_KEY = json_load["api_key"]
-
+API_KEY = st.secrets.DeepL.api_key
 
 target_lang = "ja"
 
