@@ -28,10 +28,6 @@ st.write("\n")
 search_words = st.text_input("検索 (Поиск слов)", "検索したい単語を入れてください Напишите слова")
 
 
-with open("auth.json") as json_open:
-    json_load = json.load(json_open)
-
-
 API_KEY = st.secrets.DeepL.api_key
 
 target_lang = "ja"
